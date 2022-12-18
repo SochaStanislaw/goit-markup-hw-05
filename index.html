@@ -21,17 +21,37 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- MODAL-BOX-BEGIN -->
+    <div data-modal class="modal is-hidden backdrop">
+      <div class="modal-box">
+        <button data-modal-close class="close-modal-button">
+          <svg>
+            <use
+              href="./images/SVG/modal-box-close.svg#icon-close-black-18dp-2-1"
+              width="18px"
+              height="18px"
+              x="4.5px"
+              y="6px"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- MODAL-BOX-END -->
+    <!-- NAV-MENU-BAR-BEGIN -->
     <header class="header-nav-border">
       <div class="container">
         <div class="header-nav-box">
           <a
             class="head-foot-common-styles header-title-style"
-            href="index.html"
+            href="./index.html"
             ><span class="web-title-style">Web</span>Studio</a
           >
           <nav>
             <ul class="menu-nav">
-              <li><a class="agencja-link" href="">Agencja</a></li>
+              <li>
+                <a class="agencja-link" href="./index.html">Agencja</a>
+              </li>
               <li>
                 <a class="portfolio-link" href="./portfolio.html">Portfolio</a>
               </li>
@@ -61,6 +81,7 @@
         </div>
       </div>
     </header>
+    <!-- NAV-MENU-BAR-END -->
     <main>
       <!-- SECTION-NO-1-MAIN HEADING-BEGIN -->
       <div class="section">
@@ -69,12 +90,14 @@
             <h1 class="main-card-heading">
               efektywne rozwiązania dla waszego biznesu
             </h1>
-            <button class="order-button" type="button">Zamów usługę</button>
+            <button data-modal-open class="order-button" type="button">
+              Zamów usługę
+            </button>
           </div>
         </section>
       </div>
       <!-- SECTION-NO-1-END -->
-      <!-- SECTION-NO-2-NASZE ZALETY-BEGIN -->
+      <!-- SECTION-NO-2-OUR ADVENTAGES-BEGIN -->
       <section class="section">
         <div class="container section-no-2-box-style">
           <ul>
@@ -499,6 +522,7 @@
       </section>
       <!-- SECTION-NO-5-END -->
     </main>
+    <!-- FOOTER-BAR-BEGIN -->
     <footer class="footer-contact-style">
       <div class="flex-box-footer">
         <div class="container footer-contact-position">
@@ -601,5 +625,9 @@
         </div>
       </div>
     </footer>
+    <!-- FOOTER-BAR-END -->
+    <!-- MODAL-SCRIPT-JS-BEGIN -->
+    <script src="./js/modal.js"></script>
+    <!-- MODAL-WINDOW-JS-END -->
   </body>
 </html>

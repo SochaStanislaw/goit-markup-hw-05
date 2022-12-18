@@ -7,6 +7,7 @@
     padding: 0;
 }
 
+/* ROOT-BEGIN */
 :root {
     --background-color: #FFFFFF;
     --main-card-background-color: #2F303A;
@@ -19,24 +20,85 @@
     --paragraph-font-color: #757575;
     --footer-bg-color: #2F303A
 }
+/* ROOT-END */
 
+/* BODY-STYLE-BEGIN */
 body {
 font-family: var(--main-font);
 background-color: var(--background-color);
 width: 1600px;
 margin: 0 auto;
+/* z-index: 1; */
 }
+/* BODY-STYLE-END */
 
+/* CONTENT-CONTAINER-STYLE-BEGIN */
 .container {
     width: 1200px;
     margin: 0 auto;
 }
+/* CONTENT-CONTAINER-STYLE-END */
 
+/* SECTION'S SPACE BEETWEN-BEGIN */
 .section {
     padding-bottom: 94px;
 }
+/* SECTION'S SPACE BEETWEN-END */
 
-/* header */
+/* ---------------------------------------------- */
+
+/* AGENCJA-PAGE-BEGIN */
+
+/* MODAL-BOX-BEGIN */
+.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
+    skew(40deg, 40deg);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal-box {
+    width: 528px;
+    height: 581px;
+    position: absolute;
+    top: 221px;
+    left: calc(50% - 309px);
+    z-index: 2;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 
+        0px 1px 3px 
+            rgba(0, 0, 0, 0.12), 
+        0px 1px 1px 
+            rgba(0, 0, 0, 0.14),
+        0px 2px 1px 
+            rgba(0, 0, 0, 0.2);
+}
+
+.close-modal-button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 8px;
+    left: 490px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+/* MODAL-BOX-END */
+
+/* NAV-MENU-BAR-BEGIN */
 /* header&footer common styles */
 .head-foot-common-styles {
 font-family: 'Raleway', 'Roboto', sans-serif;
@@ -148,8 +210,11 @@ span.web-title-style {
     fill: #2196F3;
     color: #2196F3;
 }
+/* NAV-MENU-BAR-END */
 
-/* main */
+/* MAIN-BEGIN */
+
+/* SECTION-NO-1-MAIN HEADING-BEGIN */
 /* section-no-1: main card color */
 .section-no-1 {
     text-align: center;
@@ -176,6 +241,7 @@ span.web-title-style {
     color: #ffffff;
     margin-bottom: 30px;
 }
+
 /* button "zamów usługę */
 .order-button {
     width: 200px;
@@ -191,7 +257,9 @@ span.web-title-style {
     border: none;
     cursor: pointer;
 }
+/* SECTION-NO-1-END */
 
+/* SECTION-NO-2-OUR ADVENTAGES-BEGIN */
 /* section-no-2: nasze zalety */
 .section-no-2-box-style ul {
     list-style: none;
@@ -229,7 +297,9 @@ span.web-title-style {
     letter-spacing: 0.03em;
     color: var(--paragraph-font-color);
 }
+/* SECTION-NO-2-END */
 
+/* SECTION-NO-3-WHAT WE DO-BEGIN */
 /* section-no-3: "czym się zajmujemy" */
 .section-no-3-heading {
     font-weight: 700;
@@ -261,7 +331,9 @@ span.web-title-style {
     height: 294px;
     padding: 0 15px 0 15px;
 }
+/* SECTION-NO-3-END */
 
+/* SECTION-NO-4-OUR TEAM */
 /* section-no-4: "Nasz zespół" */
 .section-no-4-style {
     background-color: var(--ourteam-background-color);
@@ -338,7 +410,9 @@ span.web-title-style {
     justify-content: space-between;
     padding: 16px 32px 18px 32px;
 }
+/* SECTION-NO-4-END */
 
+/* SECTION-NO-5-OUR CUSTOMRES-BEGIN */
 /* section-no-5: "Nasi klienci" */
 .section-no-5-heading {
     font-weight: 700;
@@ -378,11 +452,13 @@ span.web-title-style {
     border: 1px solid #2196F3;
     cursor: pointer;
 }
+/* SECTION-NO-5-END */
+/* AGENCJA-PAGE-END */
 
 /* ---------------------------------------------- */
-/* portfolio-begin */
-/* portfolio-section-no-1 */
-/* filters buttons */
+
+/* PORTFOLIO-PAGE-BEGIN */
+/* PORTFOLIO-SECTION-NO-1-FILTER BUTTONS-BEGIN */
 .portfolio-section-no-1 ul {
     list-style-type: none;
     display: flex;
@@ -413,7 +489,7 @@ span.web-title-style {
     0px 2px 2px rgba(0, 0, 0, 0.12)
 }
 
-/* portfolio-section-no-2 */
+/* PORTFOLIO-SECTION-NO-2-PROJECT' CARDS-BEGIN */
 /* portfolio-cards */
 .portfolio-section-no-2-content-box .project-shadow:hover,
 .portfolio-section-no-2-content-box .project-shadow:focus {
@@ -456,8 +532,12 @@ span.web-title-style {
     letter-spacing: 0.03em;
     color: var(--paragraph-font-color);
 }
+/* PORTFOLIO-SECTION-NO-2-END */
+/* PORTFOLIO-PAGE-END */
 
-/* FOOTER-BEGIN */
+/* ---------------------------------------------- */
+
+/* FOOTER-BAR-BEGIN */
 .flex-box-footer {
     display: flex;
     padding: 60px 863px 60px 215px;
@@ -531,4 +611,4 @@ address.footer-address-box {
     display: flex;
     gap: 10px;
 }
-/* FOOTER-END */
+/* FOOTER-BAR-END */
