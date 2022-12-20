@@ -105,19 +105,21 @@ margin: 0 auto;
 }
 
 .close-modal-button:hover {
-cursor: pointer;
+    cursor: pointer;
+    background-color:#2196F3;
+    fill: #FFFFFF;
 }
 /* MODAL-BOX-END */
 
 /* NAV-MENU-BAR-BEGIN */
 /* header&footer common styles */
 .head-foot-common-styles {
-font-family: 'Raleway', 'Roboto', sans-serif;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-text-decoration: none;
-cursor: pointer;
+    font-family: 'Raleway', 'Roboto', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* nazwa strony */
