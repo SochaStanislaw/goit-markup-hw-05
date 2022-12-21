@@ -620,8 +620,8 @@ span.web-title-style {
     transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hidden-portfolio-project-box:hover .hidden-portfolio-project-description,
-.hidden-portfolio-project-box:focus .hidden-portfolio-project-description {
+.portfolio-section-no-2-content-box li:hover .hidden-portfolio-project-description,
+.portfolio-section-no-2-content-box li:focus .hidden-portfolio-project-description {
     transform: translateY(-100%);
 }
 
